@@ -1,0 +1,2 @@
+"""AI support bot package."""
+

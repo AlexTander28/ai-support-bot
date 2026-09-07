@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-07T00:00:00+06:00",
+  "title": "Design System: AI Support Bot",
+  "extensions": {
+    "colorMeta": {
+      "terminal-black": {"role":"neutral","displayName":"Корпус терминала","canonical":"#11100f","tonalRamp":["#11100f","#282522","#403b36","#59524b","#746b62","#91867a","#b0a498","#d0c5b8"]},
+      "confidence-amber": {"role":"primary","displayName":"Янтарь уверенности","canonical":"#e2a93b","tonalRamp":["#2a1d06","#49340d","#6a4d15","#8d671e","#b18429","#d3a138","#e9bd61","#f4d99b"]},
+      "verified-green": {"role":"secondary","displayName":"Подтверждённый зелёный","canonical":"#62b276","tonalRamp":["#102519","#1d3e29","#2c583a","#3c734d","#4e9061","#62ad76","#88c797","#b6dfbf"]},
+      "handoff-red": {"role":"tertiary","displayName":"Красный передачи","canonical":"#df6158","tonalRamp":["#2b100f","#4a1c19","#6b2925","#8e3732","#b14740","#d35a51","#e9837b","#f2b2ad"]}
+    },
+    "typographyMeta": {
+      "display":{"displayName":"Книжный дисплей","purpose":"Главные смысловые заголовки."},
+      "body":{"displayName":"Редакционный текст","purpose":"Объяснение механизма и выводов."},
+      "label":{"displayName":"Приборная маркировка","purpose":"Код, значения, статусы и подписи."}
+    },
+    "shadows":[{"name":"terminal-elevation","value":"0 28px 70px rgba(0,0,0,.28)","purpose":"Только для корпуса интерактивного терминала."}],
+    "motion":[{"name":"tape-fill","value":"700ms cubic-bezier(.16,1,.3,1)","purpose":"Заполнение шкалы при смене решения."}],
+    "breakpoints":[{"name":"stack","value":"980px"},{"name":"mobile","value":"620px"}]
+  },
+  "components":[
+    {"name":"Кнопка примера","kind":"button","refersTo":"preset-button","description":"Переключает синтетический вопрос и весь диагностический маршрут.","html":"<button class=\"ds-preset\">Стоимость бота</button>","css":".ds-preset{border:1px solid #403b34;background:#11100f;color:#f1ece2;padding:10px 13px;border-radius:0;font:12px/1.3 Consolas,monospace}.ds-preset:hover,.ds-preset:focus-visible{border-color:#e2a93b;color:#e2a93b;outline:2px solid #e2a93b;outline-offset:4px}"},
+    {"name":"Шкала уверенности","kind":"custom","description":"Перфорированная измерительная лента направляет решение к ответу или человеку.","html":"<div class=\"ds-tape\"><span>0,85</span></div>","css":".ds-tape{width:54px;height:220px;background:#e2a93b;color:#11100f;display:flex;align-items:center;justify-content:center;font:700 18px Consolas,monospace}.ds-tape span{writing-mode:vertical-rl;transform:rotate(180deg)}"}
+  ],
+  "narrative": {
+    "northStar":"Аналоговый диагностический терминал",
+    "overview":"Тёмный измерительный прибор, в котором источник, уверенность и решение видны одновременно.",
+    "keyCharacteristics":["Двухколоночная композиция","Смысловой цвет состояний","Перфорированная шкала","Адаптивный последовательный поток"],
+    "rules":[{"name":"Measured Color","body":"Цвет всегда сообщает состояние.","section":"colors"},{"name":"Instrument Type","body":"Моноширинный шрифт принадлежит данным и коду.","section":"typography"},{"name":"Flat Instrument","body":"Глубина строится слоями и линиями без цветного свечения.","section":"elevation"}],
+    "dos":["Показывать источник рядом с ответом.","Использовать шкалу как главный жест."],
+    "donts":["Не использовать фиолетовые градиенты.","Не разрывать слова в заголовках."]
+  }
+}

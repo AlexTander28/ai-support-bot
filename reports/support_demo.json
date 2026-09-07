@@ -1,0 +1,107 @@
+{
+  "synthetic": true,
+  "threshold": 0.65,
+  "total": 10,
+  "answers": 7,
+  "handoffs": 3,
+  "by_category": {
+    "payment": 2,
+    "pricing": 1,
+    "services": 2,
+    "support": 1,
+    "terms": 1,
+    "unknown": 3
+  },
+  "samples": [
+    {
+      "question": "Сколько стоит Telegram-бот?",
+      "category": "pricing",
+      "confidence": 1.0,
+      "decision": "answer",
+      "answer": "Демонстрационный диапазон для простого Telegram-бота: от 5 000 до 15 000 ₽. Точная оценка зависит от сценария, интеграций и состава данных.",
+      "source": "База знаний / Стоимость / Telegram-бот",
+      "reason": null
+    },
+    {
+      "question": "Какие сроки разработки?",
+      "category": "terms",
+      "confidence": 1.0,
+      "decision": "answer",
+      "answer": "Демонстрационный MVP обычно занимает от 3 до 7 рабочих дней после согласования сценария. Срок сложной интеграции оценивается отдельно.",
+      "source": "База знаний / Сроки / MVP",
+      "reason": null
+    },
+    {
+      "question": "Какие услуги вы делаете?",
+      "category": "services",
+      "confidence": 1.0,
+      "decision": "answer",
+      "answer": "В демонстрационной базе перечислены Telegram-боты, простые CRM, автоматизация Excel-отчётов и ИИ-помощники с передачей человеку.",
+      "source": "База знаний / Услуги",
+      "reason": null
+    },
+    {
+      "question": "Как оплатить проект?",
+      "category": "payment",
+      "confidence": 1.0,
+      "decision": "answer",
+      "answer": "Для демонстрационного сценария порядок оплаты фиксируется в договорённости по проекту. Бот не принимает платежи и не запрашивает данные карты.",
+      "source": "База знаний / Оплата",
+      "reason": null
+    },
+    {
+      "question": "Есть ли поддержка после запуска?",
+      "category": "support",
+      "confidence": 1.0,
+      "decision": "answer",
+      "answer": "Условия поддержки и исправлений согласуются до старта. Если вопрос относится к конкретной гарантии, бот передаёт его менеджеру.",
+      "source": "База знаний / Поддержка",
+      "reason": null
+    },
+    {
+      "question": "Настроите дрон для съёмки свадьбы?",
+      "category": "unknown",
+      "confidence": 0.0,
+      "decision": "handoff",
+      "answer": null,
+      "source": null,
+      "reason": "low_confidence"
+    },
+    {
+      "question": "Можете гарантировать миллион продаж?",
+      "category": "unknown",
+      "confidence": 0.0,
+      "decision": "handoff",
+      "answer": null,
+      "source": null,
+      "reason": "low_confidence"
+    },
+    {
+      "question": "Вы делаете CRM и Excel-отчёты?",
+      "category": "services",
+      "confidence": 0.85,
+      "decision": "answer",
+      "answer": "В демонстрационной базе перечислены Telegram-боты, простые CRM, автоматизация Excel-отчётов и ИИ-помощники с передачей человеку.",
+      "source": "База знаний / Услуги",
+      "reason": null
+    },
+    {
+      "question": "Можно оплатить через бота?",
+      "category": "payment",
+      "confidence": 0.85,
+      "decision": "answer",
+      "answer": "Для демонстрационного сценария порядок оплаты фиксируется в договорённости по проекту. Бот не принимает платежи и не запрашивает данные карты.",
+      "source": "База знаний / Оплата",
+      "reason": null
+    },
+    {
+      "question": "Подберёте музыку для ролика?",
+      "category": "unknown",
+      "confidence": 0.0,
+      "decision": "handoff",
+      "answer": null,
+      "source": null,
+      "reason": "low_confidence"
+    }
+  ]
+}
